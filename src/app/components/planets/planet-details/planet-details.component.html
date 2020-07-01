@@ -1,0 +1,17 @@
+<div class="planet-details" *ngIf="planet">
+  <img [attr.src]="planet.image" [attr.alt]="planet.name" class="planet-img"/>
+  <div class="planet-info">
+    <div class="planet-info-row">
+      <div class="label">Region:</div>
+      <div class="value">{{planet.region}}</div>
+    </div>
+    <div class="planet-info-row">
+      <div class="label">System:</div>
+      <div class="value">{{planet.system}}</div>
+    </div>
+    <div class="planet-info-row">
+      <div class="label">Description:</div>
+      <div class="value">{{planet.description}}</div>
+    </div>
+  </div>
+</div>

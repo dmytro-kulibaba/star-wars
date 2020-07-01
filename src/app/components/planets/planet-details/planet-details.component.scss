@@ -1,0 +1,30 @@
+@import "../../../../assets/styles/variables";
+
+:host {
+  display: block;
+  background-color: $primary-background;
+  min-height: 400px;
+  overflow: auto;
+  padding: 20px;
+}
+
+.planet-details {
+  display: flex;
+
+  .planet-img {
+    max-width: 200px;
+    margin-right: 20px;
+    height: 100%;
+  }
+
+  .planet-info-row {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    .label {
+      min-width: 100px;
+      font-weight: bold;
+    }
+  }
+}

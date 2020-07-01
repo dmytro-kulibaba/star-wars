@@ -1,0 +1,39 @@
+@import "variables";
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .form-label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    border: 1px solid $primary-text-color;
+    background-color: $secondary-background;
+    width: 300px;
+    padding: 10px 20px;
+    color: $primary-text-color;
+    font-size: 14px;
+
+    &::placeholder {
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.app-button {
+  padding: 10px 20px;
+  color: $primary-text-color;
+  background-color: $secondary-background;
+  outline: none;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($secondary-background, 0.9);
+  }
+}

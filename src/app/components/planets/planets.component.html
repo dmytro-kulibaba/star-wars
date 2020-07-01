@@ -1,0 +1,12 @@
+<h2 class="page-title">Planets</h2>
+
+<div class="planets-list">
+  <div class="planet-row" *ngFor="let planet of planets; trackBy: trackByFn">
+    <div class="planet-img">
+      <img [routerLink]="['/planets', planet.name]" src="{{planet.image}}" alt="{{planet.name}}" class="planet-details-link"/>
+    </div>
+    <div class="planet-name">
+      <h3 [routerLink]="['/planets', planet.name]" class="planet-details-link">{{planet.name}}</h3>
+    </div>
+  </div>
+</div>

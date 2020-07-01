@@ -1,0 +1,12 @@
+<div class="login-form">
+  <form action="/" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-label">Please enter your email address</div>
+      <input class="form-input" type="email" placeholder="Email address" formControlName="email" email="true"/>
+    </div>
+
+    <app-validation-error errorMessage="Please enter a valid email address" *ngIf="!isFormValid"></app-validation-error>
+
+    <button type="submit" class="app-button">Submit</button>
+  </form>
+</div>

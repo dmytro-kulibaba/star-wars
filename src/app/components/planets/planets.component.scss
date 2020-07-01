@@ -1,0 +1,35 @@
+@import "../../../assets/styles/variables";
+
+:host {
+  display: block;
+  background-color: $primary-background;
+  height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+.planets-list {
+  .planet-row {
+    display: flex;
+    padding: 10px 20px;
+    border-top: 1px solid $primary-text-color;
+
+    .planet-img {
+      margin-right: 20px;
+      width: 200px;
+      height: 200px;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .planet-name {
+      font-size: 50px;
+    }
+
+    .planet-details-link {
+      cursor: pointer;
+    }
+  }
+}

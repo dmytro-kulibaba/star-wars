@@ -1,0 +1,47 @@
+@import "../assets/styles/variables";
+
+.app-content {
+  margin: 100px auto 0 auto;
+  max-width: 1000px;
+}
+
+.app-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $toolbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-background;
+
+  .logo {
+    color: $primary-text-color;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  .common-nav {
+    list-style-type: none;
+    display: flex;
+
+    & > li {
+      cursor: pointer;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-right: 20px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover,
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

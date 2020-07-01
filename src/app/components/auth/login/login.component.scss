@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/forms";
+
+:host {
+  display: block;
+  background-color: $primary-background;
+  overflow: auto;
+  height: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
